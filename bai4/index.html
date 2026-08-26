@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title> bai 4 </title>
+</head>
+
+<body>
+    <h1>Form tạo thông tin</h1>
+    <form>
+        <!-- Input nếu không truyền type thì
+        type sẽ mặc định là text -->
+        <div>
+            <p><b>Họ và tên:</b><br></p>
+            <input type="text" name="hoVaTen">
+        </div>
+        <br>
+        
+        <div>
+            <b><p>Giới thiệu:</b></p>
+            <textarea name="gioiThieu"></textarea>
+        </div>
+        <br>
+        <div>
+            <p><b>Email</b></p>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <p><b>số điện thoại</b></p>
+            <input name="soDienThoai"
+            type="tel"
+            plceholder="dạng số 123"
+            required
+            pattern="([0]{1}([[9|3|6|8]{1})((0-9){8}))">
+        </div>
+
+         <div>
+            <p><b>giới tính</b><br></p>
+            <input type="radio" name="gioiTinh" value="male">Nam<br>
+            <input type="radio" name="gioiTinh" value="nu">Nu<br>
+         </div>
+
+          <div>
+            <p><b>sở thích</b><br></p>
+            Game:<input type="checkbox" name="soThich" value="game"><br>
+            Music:<input type="checkbox" name="soThich" value="music"><br>
+            Sport:<input type="checkbox" name="soThich" value="Sport"><br>
+         </div>
+
+         <div>
+            <p><b>trình duyệt web hay sử dụng</b><br></p>
+            <input list="browser">
+            <datalist id="browser">
+                <option value="interner explorer">
+                <option value="firefox">
+                <option value="chrome">
+                <option value="opera">
+            </datalist>
+
+            <select name="browser">
+                <option value="interner explorer">internet explorer</option>
+                <option value="firefox">firefox</option>
+                <option value="chrome">chrome</option>
+                <option value="opera">opera</option>
+         </div>
+
+         <div>
+            0<input type="range" id="a" value="50">100
+         </div>
+
+         <div>
+            <input type="submit">
+            <button>click</button>
+            <input type="reset">
+         </div>
+
+         <iframe width="560" height="315" 
+         src="https://www.youtube.com/embed/xaha4r4q6ng?si=dSOZS0p4dZbVFj1T"
+         title="YouTube video player"
+          frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; 
+          encrypted-media; gyroscope; 
+          picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+    </form>
+
+    <Marquee>
+        <img src="/anh/WIN_20250918_09_26_09_Pro (2).jpg">
+    </Marquee>
+</body>
+
+</html>
