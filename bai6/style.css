@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+.danh-sach-muc {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    /* gap khoảng cách các đối tượng ở trong */
+    gap: 20px;
+}
+
+.danh-muc {
+    background-color: #2fa4e7;
+}
+
+.lien-ket {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+.trai {
+    width: 20%;
+    height: 100vh;
+    /* 3 tham so: do day, loai duong vien, mau sac  */
+    border-right: 1px solid #2fa4e7;
+}
+
+.khoi-dang-nhap {
+    /* background-color: orange; */
+    width: 100%;
+    height: 100px;
+}
+
+form {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.khoi-thong-tin {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.quen-mat-khau {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quen-mat-khau-lien-ket {
+    color: #2fa4e9;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.phai {
+    width: 80%;
+    height: 100vh;
+}
+
+.tin{
+    width: 
+}
