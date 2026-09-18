@@ -1,0 +1,65 @@
+ body{
+            background-color: #2F2C38;
+            color: white;
+        }
+        .danh-sach-muc{
+            list-style:none;
+            display: flex;
+            gap:20px;
+            align-items: center;
+
+        }
+        .lien-ket-muc{
+            text-decoration: none;
+            color:#DBDBDD;
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .muc{
+            padding: 15px;
+            border-radius: 25px;
+
+        }
+
+        .muc:hover{
+            background-color: gray;
+        }
+
+        .logo{
+            width: 50px;
+        }
+
+        .avata{
+            width: 50px;
+            border-radius: 15px; 
+        }
+        
+        .dang-chon{
+            background-color: #4E4B52;
+        }
+
+        .banner{
+            background-color:aliceblue;
+            width: 95%;
+            height: 40vh;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .danh-sach-the-loai{
+            width: 95%;
+            background-color:red;
+            height: 20vh;
+            margin-top: 20px auto;
+        }
+
+        .phim-poster{
+            width: 24%;
+            width: 24%;
+            height: 15vh;
+            border-radius: 15px;
+            background-color:aliceblue;  
+        }
