@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-1</title>
+</head>
+
+<body>
+    <!-- internal javascript -->
+
+    <script>
+        // in ra man hinh
+        document.writeln('hello world! <br>');
+
+        <!-- khai bao bien -->
+        var name = "Khoa dep trai<br>";
+
+        document.writeln(name);
+
+        name = "Hieu cho gay<br>";
+
+        document.writeln(name);
+
+        var year = 1010;
+
+        document.writeln(year);
+
+        //phep toan
+        var so1 = 123;
+        var so2 = 456;
+        //cong+
+        kq = so1 + so2;
+        document.writeln("<br> ket qua so1+so2 la: ")
+        document.writeln(kq);
+        //tru -
+        kq = so1 - so2;
+        document.writeln("<br> ket qua so1-so2 la: ")
+        document.writeln(kq);
+
+        //nhan *
+        kq = so1 * so2;
+        document.writeln("<br> ket qua so1*so2 la: ")
+        document.writeln(kq);
+
+        //chia/
+        kq = so1 / so2;
+        document.writeln("<br> ket qua so1/so2 la: ")
+        document.writeln(kq);
+
+        kq = so1 % so2;
+        document.writeln("<br> ket qua so1%so2 la: ")
+        document.writeln(kq);
+
+        //++
+        document.writeln("<br>");
+        so1++
+        document.writeln(so1);
+
+        //--
+        document.writeln("<br>");
+        document.writeln(so1--);
+
+        //+=
+        document.writeln("<br>");
+        so1 += so2;
+        document.writeln(so1);
+
+        var ho = "Nguyen";
+        document.writeln("<br>" + ho + " " + name);
+        document.writeln(ho.length);
+        // kiem tra kieu du lieu cua bien
+        document.writeln(typeof (ho));
+
+        var hoVaTen = "trung hieu gay vcl";
+        document.write(hoVaTen.indexOf("i"));
+
+        document.write("<br>");
+        document.write(hoVaTen.includes("e"));
+
+        document.write("<br>");
+        document.write(hoVaTen.startsWith("vcl"));
+
+        document.write("<br>");
+        document.write(hoVaTen.replace('gay','les'));
+
+        document.write("<br>");
+        document.write(hoVaTen.toUpperCase());
+
+        document.write("<br>");
+        document.write(hoVaTen.toLowerCase());
+    </script>
+
+
+
+    <!-- external javascript -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

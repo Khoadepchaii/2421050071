@@ -1,65 +1,131 @@
- body{
-            background-color: #2F2C38;
-            color: white;
-        }
-        .danh-sach-muc{
-            list-style:none;
-            display: flex;
-            gap:20px;
-            align-items: center;
+body {
+    background-color: #2F2C38;
+    color: white;
+}
 
-        }
-        .lien-ket-muc{
-            text-decoration: none;
-            color:#DBDBDD;
-        }
-        header{
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .muc{
-            padding: 15px;
-            border-radius: 25px;
+.danh-muc {}
 
-        }
+.danh-sach-muc {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 
-        .muc:hover{
-            background-color: gray;
-        }
+}
 
-        .logo{
-            width: 50px;
-        }
+.avata-anh {
+    margin-left: auto;
+}
 
-        .avata{
-            width: 50px;
-            border-radius: 15px; 
-        }
-        
-        .dang-chon{
-            background-color: #4E4B52;
-        }
+.chuc-nang {}
 
-        .banner{
-            background-color:aliceblue;
-            width: 95%;
-            height: 40vh;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
 
-        .danh-sach-the-loai{
-            width: 95%;
-            background-color:red;
-            height: 20vh;
-            margin-top: 20px auto;
-        }
+.avata {
+    width: 50px;
+    border-radius: 15px;
+}
 
-        .phim-poster{
-            width: 24%;
-            width: 24%;
-            height: 15vh;
-            border-radius: 15px;
-            background-color:aliceblue;  
-        }
+.lien-ket-muc {
+    text-decoration: none;
+    color: #DBDBDD;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.muc {
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+.muc:hover {
+    background-color: gray;
+}
+
+.logo {
+    width: 50px;
+}
+
+.dang-chon {
+    background-color: #4E4B52;
+}
+
+.banner {
+    width: 95%;
+    height: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.danh-sach-the-loai {
+    width: 95%;
+    margin: 20px auto 0;
+}
+
+.the-loai {
+    margin: 20px;
+}
+
+.phim {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phim-poster {
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.phim-poster:hover {
+    transform: scale(1.05);
+}
+
+.anh-nhan-vat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nv {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.tt {
+    list-style: none;
+}
+
+.font-chu {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #808080;
+}
+
+.tre-em {
+    display: flex;
+    justify-content: end;
+}
+
+.tre-em img {
+    width: 65px;
+}
