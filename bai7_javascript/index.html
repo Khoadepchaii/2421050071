@@ -90,6 +90,126 @@
 
         document.write("<br>");
         document.write(hoVaTen.toLowerCase());
+
+        //date
+        var today=new Date();
+        document.writeln("<br>");
+        document.writeln(today);
+
+        var ngay=new Date("3/3/2026");
+        document.writeln("<br>");
+        document.write(ngay);
+
+        var namNay=today.getFullYear();
+        document.writeln("<br>");
+        document.writeln(namNay);
+
+        var thangNay=today.getMonth();
+        document.writeln("<br>");
+        document.writeln(thangNay+1);
+
+        var ngayHomNay=today.getDate();
+        var thu= today.getDay()+1;
+
+        document.writeln("hom nay la thu"+thu+" ngay "+ngay+" thang "+thangNay+" nam " +namNay);
+
+        //mang
+        var mang = [1,2,3,4,5];
+        document.writeln("<br>");
+        document.writeln(mang[2]);
+
+        document.writeln("<br>");
+        document.writeln(mang.length);
+
+        document.writeln("<br>");
+        var mangTen=["Khoa","Hieu","Trung"];
+        document.writeln(mangTen[2]);
+
+        document.writeln("<br>");
+        var mangSo=[1,2,3,4,5,"Khoa","Hieu","Trung"];
+        document.writeln(mangSo[6]);
+
+        var d=mang.concat(mangSo,mangTen);
+        document.writeln("<br>");
+        document.writeln(d.join("-"));
+
+        document.writeln("<br>");
+        document.write(d.pop());
+
+        document.writeln("<br>");
+        d.push("Tuat");
+        document.write(d);
+
+        document.writeln("<br>");
+        document.write(mangSo.reverse());
+
+        //object
+        document.writeln("<br>");
+        var thongTinSinhVien = {
+            ten: "Nguyen Dang Khoa",
+            namSinh: 2006,
+            queQuan: {
+                thanhPho:"Ha Noi",
+                phuong:"Thien Loc"
+            }
+        };
+        document.write(thongTinSinhVien.queQuan.thanhPho);
+        tuoi=namNay-thongTinSinhVien.namSinh;
+        thongTinSinhVien.tuoi=tuoi;
+        document.write("<br>")
+        document.write(thongTinSinhVien.tuoi);
+        // console.log(thongTinSinhVien);
+        document.write("<br>")
+        // boolean: true nam/ false nu
+        thongTinSinhVien.gioiTinh=true;
+        document.write(thongTinSinhVien.gioiTinh);
+
+
+        var danhSach =[ {
+            ten: "Nguyen Dang Khoa",
+            namSinh: 2006,
+            queQuan: {
+                thanhPho:"Ha Noi",
+                phuong:"Thien Loc"
+            }
+        },{ ten: "Trung Tuat",
+            namSinh: 2006,
+            queQuan: {
+                thanhPho:"Phu Tho",
+                phuong:"Nong Trang"
+            }
+        },{
+             ten: "Hieu lo",
+            namSinh: 2006,
+            queQuan: {
+                thanhPho:"Ha Noi",
+                phuong:"Dong Ngac"
+            }
+        }
+        ]
+        console.log(danhSach);
+        //=== so sanh ca gia tri va kieu du lieu
+        var so1=10;
+        var so2="10";
+        document.writeln("<br>");
+        document.writeln(so1!==so2);
+
+
+        if(thu>6){
+            document.writeln("cuoi tuan");
+        }
+        else{
+            document.writeln("di hoc");
+        }
+
+        var so=5;
+        if(so%2==0){
+            document.writeln("so chan");
+        }
+        else{
+            document.writeln("so le")
+        }
+
     </script>
 
 
