@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-2</title>
+</head>
+<body>
+    <script>
+        function sayHello(){
+            document.writeln("hello")
+        }
+
+        sayHello();
+        sayHello();
+        
+        function sayHello2(ten){
+            document.write("<br> xin chao ban"+ten);
+        }
+        sayHello2("Khoa");
+        sayHello2("Trung");
+        sayHello2("Hieu");
+
+        document.write("<br>")
+
+        
+        var r =prompt("nhap so vao day","nhap thu nhat")
+        document.write(r);
+        if(isNaN(r)){
+            document.write("vui long nhap so")
+            document.write("<br>");
+        }
+        else{
+            document.write("so thu nhat la "+r);
+            document.write("<br>");
+        }
+        var r2 =prompt("nhap so vao day","nhap thu hai")
+        document.write(r);
+        if(isNaN(r2)){
+            document.write("vui long nhap so")
+            document.write("<br>");
+        }
+        else{
+            document.write("so thu nhat la "+r2);
+            document.write("<br>");
+        }
+
+        function tong(){
+            document.write("tong cua ban la "+(r1+r2))
+        }
+        tong();
+
+
+        function tinhTong(a,b){
+            if(isNaN(a)==false && isNaN(b)==false){
+                document.write(a+b);
+            }
+        }
+
+        tinhTong(2,3);
+    </script>
+</body>
+</html>
