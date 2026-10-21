@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-2</title>
 </head>
+
 <body>
+    <div>
+        Nhap diem A:<input id="diemA" type="number">
+    </div>
+    <div>
+        Nhap diem B:<input id="diemB" type="number">
+    </div>
+    <div>
+        Nhap diem C:<input id="diemC" type="number">
+    </div>
+
+    <div>
+        <button onclick="tinhDiem()">Tinh diem</button>
+    </div>
+    <div>
+        kết quả:<input id="ketQua" type="text">
+    </div>
+    <div>
+        Nhap nam sinh:<input id="tuoi" type="number">
+    </div>
+    <div>
+        <button onclick="Tuoi()"> tính tuổi</button>
+    </div>
+    <div>
+        tuổi của bạn là:<input id ="urAge" type="number">
+    </div>
     <script>
-        function sayHello(){
+        function Tuoi(){
+            var year=new Date().getFullYear();
+            var age=parseInt(document.getElementById("tuoi").value);
+            var a= year-age;
+            
+
+            document.getElementById("urAge").value=a;
+        }
+
+
+
+        function tinhDiem(){
+            var a = parseFloat(document.getElementById("diemA").value)
+            var b = parseFloat(document.getElementById("diemB").value)
+            var c = parseFloat(document.getElementById("diemC").value)
+
+            tinhDiemChu(a,b,c);
+
+            document.getElementById("ketQua").value=tinhDiemChu(a,b,c)
+
+        }
+
+        function tinhDiemChu(a,b,c) {
+            
+            var tong = a * 0.6 + b * 0.3 + c * 0.1;
+            var kq = "";
+            if (tong < 4) {
+                kq = "F";
+            }
+            else if (tong >= 4 && tong < 5) {
+                kq = "C"
+            }
+            else if (tong >= 5 && tong < 7) {
+                kq = "D"
+            }
+            else if (tong >= 7 && tong < 8) {
+                kq = "B"
+            }
+            else if (tong >= 8 && tong < 10) {
+                kq = "A"
+            }
+            else {
+                kq = "ket qua khong hop le"
+            }
+            return kq;
+        }
+        function sayHello() {
             document.writeln("hello")
         }
 
         sayHello();
         sayHello();
-        
-        function sayHello2(ten){
-            document.write("<br> xin chao ban"+ten);
+
+        function sayHello2(ten) {
+            document.write("<br> xin chao ban" + ten);
         }
         sayHello2("Khoa");
         sayHello2("Trung");
@@ -23,41 +96,46 @@
 
         document.write("<br>")
 
-        
-        var r =prompt("nhap so vao day","nhap thu nhat")
+
+        var r = prompt("nhap so vao day", "nhap thu nhat")
         document.write(r);
-        if(isNaN(r)){
+        if (isNaN(r)) {
             document.write("vui long nhap so")
             document.write("<br>");
         }
-        else{
-            document.write("so thu nhat la "+r);
+        else {
+            document.write("so thu nhat la " + r);
             document.write("<br>");
         }
-        var r2 =prompt("nhap so vao day","nhap thu hai")
+        var r2 = prompt("nhap so vao day", "nhap thu hai")
         document.write(r);
-        if(isNaN(r2)){
+        if (isNaN(r2)) {
             document.write("vui long nhap so")
             document.write("<br>");
         }
-        else{
-            document.write("so thu nhat la "+r2);
+        else {
+            document.write("so thu nhat la " + r2);
             document.write("<br>");
         }
 
-        function tong(){
-            document.write("tong cua ban la "+(r1+r2))
+        function tong() {
+            document.write("tong cua ban la " + (r1 + r2))
         }
         tong();
 
 
-        function tinhTong(a,b){
-            if(isNaN(a)==false && isNaN(b)==false){
-                document.write(a+b);
+        function tinhTong(a, b) {
+            if (isNaN(a) == false && isNaN(b) == false) {
+                document.write(a + b);
             }
         }
 
-        tinhTong(2,3);
+        tinhTong(2, 3);
+        parseInt("42")
+        parseInt("42.33")
+
+
     </script>
 </body>
+
 </html>
