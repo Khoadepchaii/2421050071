@@ -27,8 +27,11 @@
     </div>
 
     <main>
-        <div class="banner">
-            <img src="img/anhTo.jpg" alt="">
+        <iframe class="banner-img" src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315"
+            frameborder="0" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen referrerpolicy="strict-origin-when-cross-origin" loading="lazy">
+        </iframe>
         </div>
 
         <div class="danh-sach-the-loai">
@@ -69,7 +72,7 @@
                 </div>
             </div>
             <div class="the-loai">
-                <p> Mọi người đang xem  </p>
+                <p> Mọi người đang xem </p>
                 <div class="danh-sach-phim">
                     <div class="phim">
                         <img src="img/d1.png" class="phim-poster"></img>
@@ -130,6 +133,22 @@
             <img src="img/treem.png" alt="Trẻ em">
         </div>
     </main>
+    <script>
+        var danhSachPhim[
+            {
+                id:1,
+                ten: "nhung con rong troi day",
+                thoiLuong:15,
+                banner:"pic"
+                trailer:"https://youtu.be/CHLCmomUIh8?si=GJygeboK_JlXhqAo"
+
+            }
+        ]
+        function xemTrailer() {
+            document.getElementsByClassName("banner")[0].style = "display:none";
+            document.getElementsByClassName("banner")[1].style = "display:block";
+        }
+    </script>
 </body>
 
 </html>

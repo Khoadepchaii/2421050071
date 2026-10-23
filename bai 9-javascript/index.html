@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="khoi">
+        <h1 class="che-do">chế độ sáng</h1>
+        <img class="anh" src="mattroi.jpg" alt="">
+        <div class="chuc-nang">
+            <button onclick="doichedo()">đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        var cheDo = true;
+        function doichedo() {
+            if (cheDo == true) {
+                document.getElementsByTagName("body")[0].style = "background-color: black";
+                document.getElementsByClassName("che-do")[0].style = "color: white";
+                document.getElementsByClassName("che-do")[0].innerHTML = "chế độ tối";
+                document.getElementsByTagName("img")[0].src = "mattrang.jpg";
+                cheDo = false;
+            }
+            else{
+                document.getElementsByTagName("body")[0].style = "background-color: white";
+                document.getElementsByClassName("che-do")[0].style = "color: black";
+                document.getElementsByClassName("che-do")[0].innerHTML = "chế độ sáng";
+                document.getElementsByTagName("img")[0].src = "mattroi.jpg";
+                cheDo = true;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
