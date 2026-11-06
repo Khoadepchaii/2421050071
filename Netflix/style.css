@@ -5,6 +5,15 @@ body {
 
 .danh-muc {}
 
+.banner-img{
+    width: 95%;
+    height: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
 .danh-sach-muc {
     list-style: none;
     display: flex;
@@ -83,14 +92,14 @@ header {
 }
 
 .phim-poster {
-    width: 270px;
-    height: 150px;
+    width: 300px;
+    aspect-ratio: 16 / 9;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover;
 }
 
-
 .phim-poster:hover {
+    cursor: pointer;
     transform: scale(1.05);
 }
 

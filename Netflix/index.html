@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -27,59 +28,60 @@
     </div>
 
     <main>
-        <iframe class="banner-img" src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315"
-            frameborder="0" title="YouTube video player"
+        <img id="banner-anh" onclick="video(0)" style="display: block;" class="banner-img" src="img/banner.jpg">
+        <iframe id="banner-video" class="banner-img" style="display: none;"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen referrerpolicy="strict-origin-when-cross-origin" loading="lazy">
+            allowfullscreen referrerpolicy="strict-origin-when-cross-origin">
         </iframe>
-        </div>
 
+        </div>
         <div class="danh-sach-the-loai">
             <div class="the-loai">
                 <p> có thể bạn chưa xem </p>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img src="img/a1.png" class="phim-poster"></img>
-                        <img src="img/a2.png" class="phim-poster"></img>
-                        <img src="img/a3.png" class="phim-poster"></img>
-                        <img src="img/a4.png" class="phim-poster"></img>
-                        <img src="img/a5.png" class="phim-poster"></img>
+                        <img src="img/a1.png" class="phim-poster" onclick="video(1)"></img>
+                        <img src="img/a2.png" class="phim-poster" onclick="video(2)"></img>
+                        <img src="img/a3.png" class="phim-poster" onclick="video(3)"></img>
+                        <img src="img/a4.png" class="phim-poster" onclick="video(4)"></img>
+                        <img src="img/a5.png" class="phim-poster" onclick="video(5)"></img>
                     </div>
                 </div>
             </div>
             <div class="the-loai">
                 <p> Hoạt hình </p>
-                <div class="danh-sach-phim">
+                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img src="img/b1.png" class="phim-poster"></img>
-                        <img src="img/b2.png" class="phim-poster"></img>
-                        <img src="img/b3.png" class="phim-poster"></img>
-                        <img src="img/b4.png" class="phim-poster"></img>
-                        <img src="img/b5.png" class="phim-poster"></img>
+                        <img src="img/a1.png" class="phim-poster" onclick="video(1)"></img>
+                        <img src="img/a2.png" class="phim-poster" onclick="video(2)"></img>
+                        <img src="img/a3.png" class="phim-poster" onclick="video(3)"></img>
+                        <img src="img/a4.png" class="phim-poster" onclick="video(4)"></img>
+                        <img src="img/a5.png" class="phim-poster" onclick="video(5)"></img>
                     </div>
                 </div>
             </div>
             <div class="the-loai">
                 <p> phim hài hước </p>
-                <div class="danh-sach-phim">
+                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img src="img/c1.png" class="phim-poster"></img>
-                        <img src="img/c2.png" class="phim-poster"></img>
-                        <img src="img/c3.png" class="phim-poster"></img>
-                        <img src="img/c4.png" class="phim-poster"></img>
-                        <img src="img/c5.png" class="phim-poster"></img>
+                        <img src="img/a1.png" class="phim-poster" onclick="video(1)"></img>
+                        <img src="img/a2.png" class="phim-poster" onclick="video(2)"></img>
+                        <img src="img/a3.png" class="phim-poster" onclick="video(3)"></img>
+                        <img src="img/a4.png" class="phim-poster" onclick="video(4)"></img>
+                        <img src="img/a5.png" class="phim-poster" onclick="video(5)"></img>
                     </div>
                 </div>
             </div>
             <div class="the-loai">
                 <p> Mọi người đang xem </p>
-                <div class="danh-sach-phim">
+                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img src="img/d1.png" class="phim-poster"></img>
-                        <img src="img/d2.png" class="phim-poster"></img>
-                        <img src="img/d3.png" class="phim-poster"></img>
-                        <img src="img/d4.png" class="phim-poster"></img>
-                        <img src="img/d5.png" class="phim-poster"></img>
+                        <img src="img/a1.png" class="phim-poster" onclick="video(1)"></img>
+                        <img src="img/a2.png" class="phim-poster" onclick="video(2)"></img>
+                        <img src="img/a3.png" class="phim-poster" onclick="video(3)"></img>
+                        <img src="img/a4.png" class="phim-poster" onclick="video(4)"></img>
+                        <img src="img/a5.png" class="phim-poster" onclick="video(5)"></img>
                     </div>
                 </div>
             </div>
@@ -133,22 +135,6 @@
             <img src="img/treem.png" alt="Trẻ em">
         </div>
     </main>
-    <script>
-        var danhSachPhim[
-            {
-                id:1,
-                ten: "nhung con rong troi day",
-                thoiLuong:15,
-                banner:"pic"
-                trailer:"https://youtu.be/CHLCmomUIh8?si=GJygeboK_JlXhqAo"
-
-            }
-        ]
-        function xemTrailer() {
-            document.getElementsByClassName("banner")[0].style = "display:none";
-            document.getElementsByClassName("banner")[1].style = "display:block";
-        }
-    </script>
 </body>
 
 </html>
